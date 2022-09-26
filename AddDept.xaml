@@ -1,0 +1,34 @@
+﻿<Window x:Class="HrSystem.AddDept"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HrSystem"
+        mc:Ignorable="d"
+        Title="Add Department" Height="450" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" Background="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}">
+    <Grid Margin="8,8,8,8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="54"/>
+            <RowDefinition Height="46"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Label Content="ADD DEPARTMENT" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="24" FontWeight="Bold" Height="42" Margin="78,0,0,0" Width="228"/>
+        <Label Content="Department ID" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Height="34" Width="136"/>
+        <Label Content="Department Name" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Height="34" Width="168"/>
+        <Label Content="Locition" HorizontalAlignment="Center" Grid.Row="3" VerticalAlignment="Center" FontWeight="Bold" FontSize="18" Height="34" Width="78"/>
+        <TextBox x:Name="tbDptID" Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Height="30"/>
+        <TextBox x:Name="tbDptName" Grid.Column="1" Margin="0,18,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Height="30"/>
+        <ComboBox x:Name="cbLoc" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" Height="30"/>
+        <Button x:Name="btSave" Content="Save" Grid.Row="6" Height="50" Width="Auto" Margin="0,0,2,0" VerticalAlignment="Stretch" Click="btSave_Click" IsDefault="True"/>
+        <Button x:Name="btCancel" Grid.Column="1" Content="Cancel" Grid.Row="6" Height="50" Width="Auto" Margin="2,0,0,0" IsCancel="True" />
+
+    </Grid>
+</Window>
