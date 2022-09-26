@@ -71,7 +71,7 @@ namespace HrSystem
                         db.Employees.Add(emp);
                         db.SaveChanges();
                         this.Close();
-                        MessageBox.Show($"The Employee {tbFname.Text} {tbLname.Text} ID {tbEmpID.Text} has been added");
+                        MessageBox.Show($"The Employee {tbFname.Text} {tbLname.Text} ID {tbEmpID.Text} has been added !");
                         break;
                 }
             }
