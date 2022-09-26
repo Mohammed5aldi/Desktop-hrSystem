@@ -33,7 +33,7 @@ namespace HrSystem
             double salary;
             if (double.TryParse(tbSalary.Text, out salary) == false)
             {
-                MessageBox.Show("Salary format is not correct");
+                MessageBox.Show("Salary format is not correct !");
                 return;
             }
 
