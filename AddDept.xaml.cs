@@ -42,7 +42,7 @@ namespace HrSystem
 
             if (long.TryParse(tbDptID.Text, out depart) == false)
             {
-                MessageBox.Show("Enter Number Only ! ");
+                MessageBox.Show("The Reference entered for the new section is incorrect ! ");
                 return;
 
             }
