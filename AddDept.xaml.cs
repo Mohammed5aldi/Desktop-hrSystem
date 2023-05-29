@@ -48,7 +48,7 @@ namespace HrSystem
 
             //EmployeeService employeeService = new EmployeeService();
             //employeeService.Insert(tbDptID.Text);
-
+          //check number
             var CheckIdNumber = departments.Where(e => e.DepartmentId == long.Parse(tbDptID.Text)).FirstOrDefault() != null;
             switch (CheckIdNumber)
             {
